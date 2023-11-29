@@ -1,0 +1,10 @@
+POST http://localhost:5000/api/auth/register
+content-type: application/json
+
+{
+    "username": "leader",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000
