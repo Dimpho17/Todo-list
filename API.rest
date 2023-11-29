@@ -8,3 +8,11 @@ content-type: application/json
 
 ###
 GET http://localhost:5000
+###
+POST http://localhost:5000/api/auth/login
+content-type: application/json
+
+{
+    "username": "leader",
+    "password": "12345678"
+}

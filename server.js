@@ -11,8 +11,8 @@ app.use(express.json());
 
 app.use(cookieParser());
 app.use("/api/auth", require("./Routes/route"));
-app.get("/admin", adminAuth, (req, res) => res.send("Admin Route"));
-app.get("/basic", userAuth, (req, res) => res.send("User Route"));
+// app.get("/admin", adminAuth, (req, res) => res.send("Admin Route"));
+// app.get("/basic", userAuth, (req, res) => res.send("User Route"));
 
 
 process.on("unhandledRejection", err => {
