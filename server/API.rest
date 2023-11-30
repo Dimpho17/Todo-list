@@ -1,0 +1,29 @@
+POST http://localhost:5000/api/auth/register
+content-type: application/json
+
+{
+    "username": "leader",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000
+###
+POST http://localhost:5000/api/auth/login
+content-type: application/json
+
+{
+    "username": "leader",
+    "password": "12345678"
+
+}
+###
+POST http://localhost:5000/api/auth/create
+content-type: application/json
+
+{
+    "title": "shopping",
+    "description": "grocery shopping"
+
+}
+
