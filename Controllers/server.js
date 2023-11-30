@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 const PORT = 5000
-const connectDB = require("./db");
+const connectDB = require("../db.js");
 const cookieParser = require("cookie-parser");
 const { adminAuth, userAuth } = require("./middleware/auth.js");
 //Connecting the Database
