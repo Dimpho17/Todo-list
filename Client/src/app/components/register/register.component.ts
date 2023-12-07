@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+
+
+
 
 @Component({
   selector: 'app-register',
@@ -8,11 +12,11 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-  router: any;
-  constructor(private userService: UserService,) { }
+
+  constructor(private userService: UserService, private router: Router,) { }
 
   form: FormGroup = new FormGroup({
-    name: new FormControl(''),
+    // name: new FormControl(''),
     password: new FormControl(''),
     email: new FormControl(''),
 
@@ -26,7 +30,7 @@ export class RegisterComponent {
       console.log(data);
 
 
-      this.router.navigate(['/login']);
+      this.router.navigate(['/home']);
 
     });
   }
