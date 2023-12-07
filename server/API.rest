@@ -1,29 +1,62 @@
 POST http://localhost:5000/api/auth/register
 content-type: application/json
 
+
 {
-    "username": "leader",
-    "password": "12345678"
+    "password": "dp1234567",
+    "email": "preciousdimpho1799@gmail.com"
 }
 
 ###
 GET http://localhost:5000
+
+
 ###
 POST http://localhost:5000/api/auth/login
 content-type: application/json
 
 {
-    "username": "leader",
-    "password": "12345678"
+      "password": "dp12345",
+    "email": "preciousdimpho17@gmail.com"
 
 }
-###
+
+
+
+###CREATE#####
 POST http://localhost:5000/api/auth/create
 content-type: application/json
 
 {
-    "title": "shopping",
-    "description": "grocery shopping"
+    "title": "`Beer ",
+    "description": "dimpho"
 
 }
+
+#####DELETE######
+
+DELETE http://localhost:5000/api/auth/delete/6571a88decb4a4d81ca65ca6
+
+
+###Read#### 
+
+GET http://localhost:5000/api/auth/read
+
+
+###Update###
+
+PUT http://localhost:5000/api/auth/update/6571a91e2e2c7969f45882b9
+content-type: application/json
+
+{
+    "title": "`CORONA ",
+    "description": "dimpho"
+
+}
+
+
+
+
+
+
 

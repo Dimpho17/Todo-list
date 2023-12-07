@@ -1,6 +1,7 @@
 
 
 const Mongoose = require("mongoose")
+
 const ItemSchema = new Mongoose.Schema({
   title: {
     type: String,
@@ -14,5 +15,4 @@ const ItemSchema = new Mongoose.Schema({
   }
 })
 
-const Item = Mongoose.model("item", ItemSchema)
-module.exports = Item
+module.exports = Mongoose.model("item", ItemSchema)
