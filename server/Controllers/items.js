@@ -2,9 +2,6 @@ const Item = require("../model/items");
 
 exports.createItem = async (req, res, next) => {
   const { title, description } = req.body;
-  if (title.length < 4) {
-    return res.status(400).json({ message: "Title cannot be empty" });
-  }
   try {
     await Item
       .create({

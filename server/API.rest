@@ -28,8 +28,8 @@ POST http://localhost:5000/api/auth/create
 content-type: application/json
 
 {
-    "title": "`Beer ",
-    "description": "dimpho"
+    "title": "`Beermknkmn ",
+    "description": "dimphomnm"
 
 }
 
