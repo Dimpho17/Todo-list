@@ -3,8 +3,8 @@ content-type: application/json
 
 
 {
-    "password": "dp1234567",
-    "email": "preciousdimpho1799@gmail.com"
+    "password": "123456",
+    "email": "dimphoprecious17.com"
 }
 
 ###
@@ -16,8 +16,8 @@ POST http://localhost:5000/api/auth/login
 content-type: application/json
 
 {
-      "password": "dp12345",
-    "email": "preciousdimpho17@gmail.com"
+    "password": "123456",
+    "email": "dimphoprecious17.com"
 
 }
 
