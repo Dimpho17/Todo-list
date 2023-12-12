@@ -1,23 +1,65 @@
+<div class="todo-container">
+    <h1>To-Do List</h1>
+
+
+
+    <form>
 
 
 
 
-    <div class="todo-container">
-        <h1>To-Do List</h1>
-        <ul id="task-list">
-            <!-- Tasks will be added dynamically using JavaScript -->
-        </ul>
-        <pre> 
-<input type="text" placeholder="Search..">
-        </pre>
-        <div class="add-task">
-            <input type="text" id="new-task" placeholder="Add a new task">
-           
-            <button type="button" class="btn btn-success" onclick="addTask()" >Add Task</button>
-            <button type="button" class="btn btn-info">Edit</button>
-            <button type="button" class ="btn btn-block"></button>
+    </form>
+
+    <div>
+        <div class="container mt-3">
+            <div class="container" [formGroup]="form">
+
+                <div class="row mt -4">
+                    <input type="text" class="form-control" placeholder="title" #title formControlName="title"
+                        required="name" />
+                    <input type="text" class="form-control" placeholder="description" formControlName="description"
+                        required="name" #description />
+                </div>
+
+
+                <button class="btn btn-success" (click)="add(title.value, description.value)">
+                    Add
+
+                </button>
+            </div>
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col"> Description</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of items; let i =index">
+
+
+                        
+                        <th scope="row"> {{i + 1}}</th>
+                        <td>{{item.title}}</td>
+                        <td>{{item.description}}</td>
+                
+                    <div class="btn-group d-grid gap-4 d-md-flex">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Edit</button>
+                        <button
+                          class="btn btn-danger"
+                          (click)="delete(item?._id)"
+                          type="button"
+                        >
+                          Delete
+                        </button>
+
+
+
+
+                    <tr>
+    
+   
         </div>
-    </div>
-
-
 
