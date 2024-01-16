@@ -35,7 +35,7 @@ content-type: application/json
 
 #####DELETE######
 
-DELETE http://localhost:5000/api/auth/delete/6571a88decb4a4d81ca65ca6
+DELETE http://localhost:5000/api/auth/delete/6577fbc957d4c793300afa9e
 
 
 ###Read#### 

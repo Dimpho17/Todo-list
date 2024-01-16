@@ -28,6 +28,7 @@ export class RegisterComponent {
   register() {
     this.userService.register(this.form.value).subscribe((data) => {
       console.log(data);
+    
 
 
       this.router.navigate(['/login']);
